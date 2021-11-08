@@ -43,19 +43,45 @@ let navClick = document
       }
     });
   });
+// Сертификаты слайдер
+let certificate = document.querySelector('.certificate');
+let btn_prev = certificate.querySelector('.button__prev');
+let btn_next = certificate.querySelector('.button__next');
+let i = 0;
+let certificateItem = certificate.querySelectorAll('.certificate__item');
+// .forEach(function (certificateClick) {
+//   // console.log(certificateClick);
+// })
+btn_prev.addEventListener('click', function () {
+  certificateItem[i].style.display = 'none';
+  i = i - 1;
+  if (i < 0) {
+    i = certificateItem.length - 1;
+  }
+  certificateItem[i].style.display = 'block';
+});
+btn_next.addEventListener('click', function () {
+  certificateItem[i].style.display = 'none';
+  i = i + 1;
+  if (i > certificateItem.length) {
+    i = 0;
+  }
+  certificateItem[i].style.display = 'block';
+});
+
 // переключение при смене языка
-let navlang = document
-  .querySelectorAll('.lang-list__item')
-  .forEach(function (navlang) {
-    console.log(navlang);
-    navlang.addEventListener('click', function () {
-      if (navlang.classList.contains('lang-list__item--active')) {
-        navlang.classList.remove('lang-list__item--active');
-      } else {
-        navlang.classList.add('lang-list__item--active');
-      }
-    });
-  });
+// let navlang = document
+//   .querySelectorAll('.lang-list__item')
+//   .forEach(function (navlang) {
+//     console.log(navlang);
+//     navlang.addEventListener('click', function () {
+//       if (navlang.classList.contains('lang-list__item--active')) {
+//         navlang.classList.remove('lang-list__item--active');
+//       } else {
+//         navlang.classList.add('lang-list__item--active');
+//       }
+//     });
+//   });
 
 //Для 2-х языков
 // window.onload = function () {
