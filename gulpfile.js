@@ -52,7 +52,7 @@ function browserSync(params) {
   });
 }
 function scripts() {
-  return src(path.src.js)
+  return src(['node_modules/swiper/swiper-bundle.min.js', path.src.js])
     .pipe(concat('script.js'))
     .pipe(dest(path.build.js))
     .pipe(uglify())
@@ -103,7 +103,8 @@ function html() {
 }
 function styles() {
   return (
-    src(path.src.css)
+    src(['node_modules/swiper/swiper-bundle.css', path.src.css])
+      // src(path.src.css)
       .pipe(less())
       .pipe(cssbeautify())
       .pipe(
