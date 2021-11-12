@@ -216,6 +216,12 @@ input[type="radio"].visually-hidden {
   padding: 0;
   border: none;
   background-color: transparent;
+  color: #828282;
+}
+
+.button:hover {
+  background-color: rgba(130, 130, 130, 0.5);
+  color: #161515;
 }
 
 .button__footer {
@@ -423,6 +429,133 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
+.portfolio__foto {
+  min-width: 325px;
+  min-height: 182px;
+  background-color: #828282;
+  -webkit-box-shadow: 0 4px 60px rgba(140, 160, 255, 0.22);
+  box-shadow: 0 4px 60px rgba(140, 160, 255, 0.22);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid #828282;
+}
+
+.portfolio__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: none;
+  justify-items: center;
+  gap: 25px;
+  z-index: 4;
+}
+
+.portfolio__list {
+  display: -ms-grid;
+  display: grid;
+  gap: 45px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-items: center;
+}
+
+.portfolio__item {
+  position: relative;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
+}
+
+.portfolio__item:after {
+  content: '';
+  background: rgba(122, 123, 124, 0.3);
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.portfolio__item:hover::after {
+  display: block;
+}
+
+.portfolio__item:hover .portfolio__inner {
+  display: -ms-grid;
+  display: grid;
+}
+
+.portfolio__link {
+  width: 200px;
+  text-align: center;
+  -webkit-box-shadow: 0 4px 60px rgba(140, 160, 255, 0.22);
+  box-shadow: 0 4px 60px rgba(140, 160, 255, 0.22);
+  display: block;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: rgba(26, 29, 44, 0.5);
+  padding: 5px;
+}
+
+.portfolio__link:hover .portfolio__window {
+  display: block;
+}
+
+.portfolio__name {
+  font-size: 22px;
+  line-height: 26px;
+  font-style: italic;
+  font-weight: 700;
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.3));
+  color: #F6F6F6;
+}
+
+.portfolio__text {
+  text-transform: capitalize;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-grid-columns: 1fr 50px;
+  grid-template-columns: 1fr 50px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #F6F6F6;
+}
+
+.portfolio__text::after {
+  content: "";
+  display: block;
+  width: 33px;
+  height: 20px;
+  background-image: url('../img/dest/button_next.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.portfolio__window {
+  width: 300px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: none;
+  font-size: 8px;
+  line-height: 10px;
+}
+
 .portfolio__title {
   margin: 81px 0 65px 0;
   font-size: 34px;
@@ -430,50 +563,16 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
-.portfolio__list {
-  display: -ms-grid;
-  display: grid;
-  gap: 75px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.portfolio__link {
-  display: block;
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
-  color: #000000;
-}
-
-.portfolio__foto {
-  min-width: 316px;
-  min-height: 171px;
-  margin: 0 0 33px 0;
-  background-color: #C4C4C4;
-  -webkit-box-shadow: 0 4px 60px rgba(140, 160, 255, 0.22);
-  box-shadow: 0 4px 60px rgba(140, 160, 255, 0.22);
-}
-
-.portfolio__button {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
 .certificate {
   width: 100%;
   padding: 0 29px 80px 29px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  text-align: center;
   position: relative;
   display: -ms-grid;
   display: grid;
   justify-items: center;
+  margin: 0 0 15px 0;
 }
 
 .certificate__title {
@@ -491,14 +590,13 @@ input[type="radio"].visually-hidden {
 
 .certificate__foto {
   display: block;
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  min-width: 316px;
-  min-height: 171px;
   margin: 0;
   background-color: #C4C4C4;
-  -webkit-box-shadow: 0 4px 60px rgba(97, 99, 106, 0.5);
-  box-shadow: 0 4px 60px rgba(97, 99, 106, 0.5);
 }
 
 .resume {
@@ -609,22 +707,29 @@ input[type="radio"].visually-hidden {
 
 .swiper {
   width: 100%;
-  min-height: 300px;
+  position: static;
 }
 
 .swiper-button-next {
-  right: 5px;
-  color: #828282;
+  top: 95%;
+  right: 15%;
 }
 
 .swiper-button-prev {
-  left: 5px;
+  top: 95%;
+  left: 15%;
+}
+
+.swiper-pagination {
+  font-size: 18px;
   color: #828282;
 }
 
+.swiper-pagination-fraction {
+  bottom: 5%;
+}
+
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -750,33 +855,22 @@ input[type="radio"].visually-hidden {
     padding: 0 0 100px 0;
   }
 
+  .portfolio__list {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
   .portfolio__title {
     margin: 112px 0 47px 0;
   }
 
-  .portfolio__list {
-    gap: 100px;
-  }
-
-  .portfolio__foto {
-    min-width: 640px;
-    min-height: 346px;
-    margin: 0 0 44px 0;
-  }
-
   .certificate {
-    padding: 0 0 100px 0;
+    padding: 0 15px 100px 15px;
   }
 
   .certificate__title {
-    margin: 112px 0 47px 0;
-  }
-
-  .certificate__list {
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: start;
-    justify-items: center;
+    margin: 112px 0 45px 0;
   }
 
   .footer {
@@ -877,18 +971,23 @@ input[type="radio"].visually-hidden {
     max-width: 650px;
   }
 
-  .portfolio__foto {
-    min-width: 940px;
-    min-height: 510px;
+  .portfolio__list {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
   }
 
   .certificate__foto {
-    min-width: 640px;
-    min-height: 346px;
+    max-width: 500px;
   }
 
   .resume {
     max-width: 650px;
+  }
+
+  .swiper-pagination {
+    font-size: 22px;
+    font-weight: 700;
   }
 }
 

@@ -59,46 +59,54 @@ let navClick = document
   });
 
 // Сертификаты слайдер
-
 swiper = new Swiper('.swiper', {
-  slidesPerView: 2,
-  slidesPerGroup: 2,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 3,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 5,
+    },
+    1068: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 40,
+    },
+  },
+  centerSlides: true,
   loop: true,
   loopFillGroupWithBlank: true,
+  watchOverflow: true,
   pagination: {
     el: '.swiper-pagination',
-    clickable: true,
+    type: 'fraction',
+    renderFraction: function (currentClass, totalClass) {
+      return (
+        '<span class="' +
+        currentClass +
+        '"></span>' +
+        ' / <span class="' +
+        totalClass +
+        '"></span>'
+      );
+    },
   },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+  // mousewheel: {
+  //   sensitivity: 1,
+  //   // eventsTarget: '.swiper-slide',
+  // },
 });
-
-// let certificate = document.querySelector('.certificate');
-// let btn_prev = certificate.querySelector('.button__prev');
-// let btn_next = certificate.querySelector('.button__next');
-// let i = 0;
-// let certificateItem = certificate.querySelectorAll('.certificate__item');
-// // .forEach(function (certificateClick) {
-// //   // console.log(certificateClick);
-// // })
-// btn_prev.addEventListener('click', function () {
-//   certificateItem[i].style.display = 'none';
-//   i = i - 1;
-//   if (i < 0) {
-//     i = certificateItem.length - 1;
-//   }
-//   certificateItem[i].style.display = 'block';
-// });
-// btn_next.addEventListener('click', function () {
-//   certificateItem[i].style.display = 'none';
-//   i = i + 1;
-//   if (i > certificateItem.length) {
-//     i = 0;
-//   }
-//   certificateItem[i].style.display = 'block';
-// });
 
 // переключение при смене языка
 // let navlang = document
