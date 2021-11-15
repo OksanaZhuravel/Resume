@@ -151,7 +151,6 @@ swiper = new Swiper('.swiper', {
 //   <li class="active"><a href="#ru" data-lang="ru">Ru</a></li>
 //   <li><a href="#en" data-lang="en">En</a></li>
 // </ul>
-
 // Скрипт будет перекидывать значение атрибута lang у тэга HTML
 // $(".langswitcher a").on("click",function(e){
 //     e.preventDefault();

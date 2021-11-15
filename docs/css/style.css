@@ -47,6 +47,14 @@ input[type="radio"].visually-hidden {
   min-width: 375px;
 }
 
+html[lang="ru"] [lang="en"] {
+  display: none;
+}
+
+html[lang="en"] [lang="ru"] {
+  display: none;
+}
+
 .body {
   width: 100%;
   margin: 0 auto;
@@ -437,7 +445,6 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 4px 60px rgba(140, 160, 255, 0.22);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border: 2px solid #828282;
 }
 
 .portfolio__inner {
@@ -461,6 +468,9 @@ input[type="radio"].visually-hidden {
   margin: 0;
   list-style: none;
   justify-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .portfolio__item {
@@ -522,25 +532,33 @@ input[type="radio"].visually-hidden {
   display: -ms-grid;
   display: grid;
   justify-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-grid-columns: 1fr 50px;
-  grid-template-columns: 1fr 50px;
   font-size: 14px;
   line-height: 16px;
   color: #F6F6F6;
 }
 
+.portfolio__text:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
 .portfolio__text::after {
-  content: "";
-  display: block;
-  width: 33px;
-  height: 20px;
-  background-image: url('../img/dest/button_next.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  width: 100%;
+  font-size: 10px;
+  background-color: rgba(214, 150, 210, 0.8);
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  content: attr(data-tooltip);
+  margin-top: -25px;
+  opacity: 0;
+  padding: 3px 0;
+  position: absolute;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .portfolio__window {
@@ -971,9 +989,12 @@ input[type="radio"].visually-hidden {
     max-width: 650px;
   }
 
+  .portfolio__foto {
+    min-width: 650px;
+    min-height: 364px;
+  }
+
   .portfolio__list {
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
 
