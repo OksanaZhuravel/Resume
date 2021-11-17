@@ -1,75 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
   <head class="page">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oksana Zhuravel</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
-  <body class="body" lang="en">
+  <body class="body">
     <header class="header">
       <nav class="nav nav--closed nav--nojs">
-        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="nav__wrap">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#promo" class="nav__link nav__link--active"><span
-                  class="nav__text">Home</span></a></li>
-            <li class="nav__item"><a href="#about" class="nav__link"><span class="nav__text">About me</span></a></li>
-            <li class="nav__item"><a href="#skills" class="nav__link"><span class="nav__text">Skills</span></a></li>
-            <li class="nav__item"><a href="#portfolio" class="nav__link"><span class="nav__text">Portfolio</span></a>
+          <ul class="nav__list" lang="en">
+            <li class="nav__item">
+              <a href="#promo" class="nav__link nav__link--active"><span class="nav__text">Home</span></a>
             </li>
-            <li class="nav__item"><a href="#certificate" class="nav__link"><span
-                  class="nav__text">Certificates</span></a> </li>
-            <li class="nav__item"><a href="#contacts" class="nav__link"><span class="nav__text">Contacts</span></a></li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link"><span class="nav__text">About me</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link"><span class="nav__text">Skills</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link"><span class="nav__text">Portfolio</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#certificate" class="nav__link"><span class="nav__text">Certificates</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link"><span class="nav__text">Contacts</span></a>
+            </li>
+          </ul>
+          <ul class="nav__list" lang="ru">
+            <li class="nav__item">
+              <a href="#promo" class="nav__link nav__link--active"><span class="nav__text">Главная</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#about-ru" class="nav__link"><span class="nav__text">Обо мне</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link"><span class="nav__text">Навыки</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link"><span class="nav__text">Работы</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#certificate" class="nav__link"><span class="nav__text">Сертификаты</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link"><span class="nav__text">Контакты</span></a>
+            </li>
           </ul>
           <ul class="nav__list lang-list">
             <li class="lang-list__item lang-list__item--active">
-              <a href="#ru" class="lang-list__link" data-lang="ru"><span class="lang-list__text">RU</span></a></li>
-            <li class="lang-list__item ">
-              <a href="#" class="lang-list__link"><span class="lang-list__text">|</span></a></li>
+              <a href="#ru" class="lang-list__link" data-lang="ru"><span class="lang-list__text">RU</span></a>
+            </li>
             <li class="lang-list__item">
-              <a href="#en" class="lang-list__link" data-lang="en"><span class="lang-list__text">ENG</span></a></li>
+              <a href="#"><span class="lang-list__text">|</span></a>
+            </li>
+            <li class="lang-list__item">
+              <a href="#en" class="lang-list__link" data-lang="en"><span class="lang-list__text">ENG</span></a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="main">
       <section class="promo" id="promo">
-        <h1 class="promo__title">Oksana Zhuravel</h1>
-        <p class="promo__text"> Frontend developer 38 years old, Moscow</p>
+        <h1 class="promo__title" lang="en">Oksana Zhuravel</h1>
+        <p class="promo__text" lang="en">
+          Frontend developer 38 years old, Moscow
+        </p>
+        <h1 class="promo__title" lang="ru">Оксана Журавель</h1>
+        <p class="promo__text" lang="ru">
+          Frontend-разработчик, 38 лет, Москва
+        </p>
 
 									<picture>
 										<source srcset="img/dest/oksana.webp" type="image/webp">
 										<source srcset="img/dest/oksana.jpg" type="image/jpeg">
-										<img src="img/dest/oksana.jpg" alt="Foto" class="promo__img" width="316" height="437">
+										<img src="img/dest/oksana.jpg" alt="Foto" class="promo__img" width="316" height="437" />
 									</picture>
 								
       </section>
-      <section class="about" id="about">
+      <section class="about" id="about" lang="en">
         <h2 class="about__title">About me</h2>
-        <p class="about__text">Hi, I'm Oksana – frontend developer from Moscow. I'm interested in web development and
-          everything connected with it.</p>
-        <p class="about__text"> On the educational portal GEEKBRAINS I completed courses in HTML, Javascript, React and
-          gained practical skills as a Frontend developer,
-          and also improve my skills and knowledge on my own, making up non-commercial projects for my portfolio.</p>
+        <p class="about__text">
+          Hi, I'm Oksana – frontend developer from Moscow. I'm interested in web
+          development and everything connected with it.
+        </p>
+        <p class="about__text">
+          On the educational portal GEEKBRAINS I completed courses in HTML,
+          Javascript, React and gained practical skills as a Frontend developer,
+          and also improve my skills and knowledge on my own, making up
+          non-commercial projects for my portfolio.
+        </p>
         <ul class="resume">
           <li class="resume__item">
             <p class="resume__text">Layout websites and adaptiv</p>
           </li>
           <li class="resume__item">
-            <p class="resume__text">Working with HTML5, CSS3, Node.js, JavaScript, Less, Gulp, Webpack</p>
+            <p class="resume__text">
+              Working with HTML5, CSS3, Node.js, JavaScript, Less, Gulp, Webpack
+            </p>
           </li>
           <li class="resume__item">
             <p class="resume__text">PerfectPixel work</p>
           </li>
           <li class="resume__item">
-            <p class="resume__text">I understand Vue.js and the main libraries of its ecosystem</p>
+            <p class="resume__text">
+              I understand Vue.js and the main libraries of its ecosystem
+            </p>
           </li>
           <li class="resume__item">
-            <p class="resume__text">I use a development and debugging tool in the browser</p>
+            <p class="resume__text">
+              I use a development and debugging tool in the browser
+            </p>
           </li>
           <li class="resume__item">
             <p class="resume__text">Working with DOM structure</p>
@@ -78,20 +129,85 @@
             <p class="resume__text">I understand and use BEM</p>
           </li>
           <li class="resume__item">
-            <p class="resume__text">I work with a version control system (GIT)</p>
+            <p class="resume__text">
+              I work with a version control system (GIT)
+            </p>
           </li>
           <li class="resume__item">
-            <p class="resume__text">I understand the development of a professional frontend on ReactJS, Redux</p>
+            <p class="resume__text">
+              I understand the development of a professional frontend on
+              ReactJS, Redux
+            </p>
           </li>
         </ul>
         <!-- <a href="#certificate" class="nav__link"><span class="about__text"> Issued electronic certificates of completion
             of the courses.</span></a> -->
-        <p class="about__text">Ready to implement excellent projects
-          with wonderful people.</p>
+        <p class="about__text">
+          Ready to implement excellent projects with wonderful people.
+        </p>
+      </section>
+      <section class="about" id="about-ru" lang="ru">
+        <h2 class="about__title">Обо мне</h2>
+        <p class="about__text">
+          Привет, я Оксана - frontend-разработчик из Москвы.
+        </p>
+        <p class="about__text">
+          Я интересуюсь веб-разработкой и все, что с этим связано.
+        </p>
+        <p class="about__text">
+          В 2020 году на образовательном портале GEEKBRAINS закончила курсы по
+          HTML, Javascript, React и получил практические навыки в качестве
+          Frontend-разработчика. Также самостоятельно совершенствую свои навыки
+          и знания, делая некоммерческие проекты для своего портфолио.
+        </p>
+        <ul class="resume">
+          <li class="resume__item">
+            <p class="resume__text">
+              Верстаю сайты и владею адаптивной версткой
+            </p>
+          </li>
+          <li class="resume__item">
+            <p class="resume__text">
+              Работаю с HTML5, CSS3, Node.js, JavaScript, Less, Gulp, Webpack
+            </p>
+          </li>
+          <li class="resume__item">
+            <p class="resume__text">Умею работать PerfectPixel</p>
+          </li>
+          <li class="resume__item">
+            <p class="resume__text">
+              Понимаю Vue.js и основные библиотеки его экосистемы
+            </p>
+          </li>
+          <li class="resume__item">
+            <p class="resume__text">
+              Владею инструментом разработки и отладки в современных браузерах
+            </p>
+          </li>
+          <li class="resume__item">
+            <p class="resume__text">Работаю с структурой DOM</p>
+          </li>
+          <li class="resume__item">
+            <p class="resume__text">Понимаю и использую БЭМ</p>
+          </li>
+          <li class="resume__item">
+            <p class="resume__text">Работаю с системой контроля версий (GIT)</p>
+          </li>
+          <li class="resume__item">
+            <p class="resume__text">
+              Понимаю разработку профессионального frontend-а на ReactJS, Redux
+            </p>
+          </li>
+        </ul>
+        <p class="about__text">
+          Готова реализовывать отличные проекты с замечательными людьми.
+        </p>
       </section>
       <section class="skill" id="skills">
-        <h2 class="skill__title">Skills</h2>
-        <p class="skill__text">I own technologies such as</p>
+        <h2 class="skill__title" lang="en">Skills</h2>
+        <p class="skill__text" lang="en">I own technologies such as</p>
+        <h2 class="skill__title" lang="ru">Навыки</h2>
+        <p class="skill__text" lang="ru">Я владею такими технологиями как</p>
         <ul class="skill__list">
           <li class="skill__item skill__item--html">
             <p class="skill__desc">HTML5</p>
@@ -126,22 +242,28 @@
         </ul>
       </section>
       <section class="portfolio" id="portfolio">
-        <h2 class="portfolio__title">Portfolio</h2>
+        <h2 class="portfolio__title" lang="en">Portfolio</h2>
+        <h2 class="portfolio__title" lang="ru">Мои работы</h2>
         <ul class="portfolio__list">
           <li class="portfolio__item">
 
 									<picture>
 										<source srcset="img/dest/screenshoter.webp" type="image/webp">
 										<source srcset="img/dest/screenshoter.png" type="image/png">
-										<img src="img/dest/screenshoter.png" alt="Screenshoter" class="portfolio__foto" width="325" height="182">
+										<img src="img/dest/screenshoter.png" alt="Screenshoter" class="portfolio__foto" width="325" height="182" />
 									</picture>
 								
             <div class="portfolio__inner">
-              <span class="portfolio__name"> Screenshoter+</span>
+              <span class="portfolio__name">Screenshoter+</span>
               <a href="https://oksanazhuravel.github.io/Screenshoter/" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window"> open the page</span></a>
+                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                  page</span>
+                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
               <a href="https://github.com/OksanaZhuravel/Screenshoter" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window"> open the code</span></a>
+                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                  code</span>
+                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
+                  посмотреть код</span></a>
             </div>
           </li>
           <li class="portfolio__item">
@@ -149,15 +271,20 @@
 									<picture>
 										<source srcset="img/dest/insta.webp" type="image/webp">
 										<source srcset="img/dest/insta.png" type="image/png">
-										<img src="img/dest/insta.png" alt="" class="portfolio__foto" width="325" height="182">
+										<img src="img/dest/insta.png" alt="Voyage" class="portfolio__foto" width="325" height="182" />
 									</picture>
 								
             <div class="portfolio__inner">
               <span class="portfolio__name">Voyage</span>
               <a href="https://oksanazhuravel.github.io/Voyage/" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window"> open the page</span></a>
+                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                  page</span>
+                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
               <a href="https://github.com/OksanaZhuravel/Voyage" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window"> open the code</span></a>
+                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
+                  open the code</span>
+                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
+                  посмотреть код</span></a>
             </div>
           </li>
           <li class="portfolio__item">
@@ -165,15 +292,20 @@
 									<picture>
 										<source srcset="img/dest/cappadocia.webp" type="image/webp">
 										<source srcset="img/dest/cappadocia.png" type="image/png">
-										<img src="img/dest/cappadocia.png" alt="Cappadocia" class="portfolio__foto" width="325" height="182">
+										<img src="img/dest/cappadocia.png" alt="Cappadocia" class="portfolio__foto" width="325" height="182" />
 									</picture>
 								
             <div class="portfolio__inner">
               <span class="portfolio__name">Cappadocia</span>
               <a href="https://oksanazhuravel.github.io/Cappadocia/" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window"> open the page</span></a>
+                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                  page</span>
+                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
               <a href="https://github.com/OksanaZhuravel/Cappadocia" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window"> open the code</span></a>
+                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
+                  open the code</span>
+                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
+                  посмотреть код</span></a>
             </div>
           </li>
           <li class="portfolio__item">
@@ -181,15 +313,20 @@
 									<picture>
 										<source srcset="img/dest/travel.webp" type="image/webp">
 										<source srcset="img/dest/travel.png" type="image/png">
-										<img src="img/dest/travel.png" alt="Travel" class="portfolio__foto" width="325" height="182">
+										<img src="img/dest/travel.png" alt="Travel" class="portfolio__foto" width="325" height="182" />
 									</picture>
 								
             <div class="portfolio__inner">
               <span class="portfolio__name">Travel</span>
               <a href="https://oksanazhuravel.github.io/Travel/" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window"> open the page</span></a>
+                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                  page</span>
+                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
               <a href="https://github.com/OksanaZhuravel/Travel" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window"> open the code</span></a>
+                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
+                  open the code</span>
+                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
+                  посмотреть код</span></a>
             </div>
           </li>
           <li class="portfolio__item">
@@ -197,15 +334,20 @@
 									<picture>
 										<source srcset="img/dest/flover.webp" type="image/webp">
 										<source srcset="img/dest/flover.png" type="image/png">
-										<img src="img/dest/flover.png" alt="букеты" class="portfolio__foto" width="325" height="182">
+										<img src="img/dest/flover.png" alt="букеты" class="portfolio__foto" width="325" height="182" />
 									</picture>
 								
             <div class="portfolio__inner">
               <span class="portfolio__name">Author's bouquets</span>
               <a href="https://oksanazhuravel.github.io/HTMLacademy/" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window"> open the page</span></a>
+                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                  page</span>
+                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
               <a href="https://github.com/OksanaZhuravel/HTMLacademy" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window"> open the code</span></a>
+                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
+                  open the code</span>
+                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
+                  посмотреть код</span></a>
             </div>
           </li>
           <li class="portfolio__item">
@@ -213,15 +355,20 @@
 									<picture>
 										<source srcset="img/dest/studio.webp" type="image/webp">
 										<source srcset="img/dest/studio.png" type="image/png">
-										<img src="img/dest/studio.png" alt="Studio" class="portfolio__foto" width="325" height="182">
+										<img src="img/dest/studio.png" alt="Studio" class="portfolio__foto" width="325" height="182" />
 									</picture>
 								
             <div class="portfolio__inner">
               <span class="portfolio__name">Your studio</span>
               <a href="https://oksanazhuravel.github.io/Your-studio/" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window"> open the page</span></a>
+                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                  page</span>
+                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
               <a href="https://github.com/OksanaZhuravel/Your-studio" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window"> open the code</span></a>
+                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
+                  open the code</span>
+                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
+                  посмотреть код</span></a>
             </div>
           </li>
           <li class="portfolio__item">
@@ -229,15 +376,20 @@
 									<picture>
 										<source srcset="img/dest/neutron.webp" type="image/webp">
 										<source srcset="img/dest/neutron.png" type="image/png">
-										<img src="img/dest/neutron.png" alt="NeutronMail" class="portfolio__foto" width="325" height="182">
+										<img src="img/dest/neutron.png" alt="NeutronMail" class="portfolio__foto" width="325" height="182" />
 									</picture>
 								
             <div class="portfolio__inner">
               <span class="portfolio__name">NeutronMail</span>
               <a href="https://oksanazhuravel.github.io/NeutronMail-portfolio/" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window"> open the page</span></a>
+                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                  page</span>
+                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
               <a href="https://github.com/OksanaZhuravel/NeutronMail-portfolio" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window"> open the code</span></a>
+                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
+                  open the code</span>
+                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
+                  посмотреть код</span></a>
             </div>
           </li>
           <li class="portfolio__item">
@@ -245,15 +397,20 @@
 									<picture>
 										<source srcset="img/dest/startup.webp" type="image/webp">
 										<source srcset="img/dest/startup.png" type="image/png">
-										<img src="img/dest/startup.png" alt="STARTUP" class="portfolio__foto" width="325" height="182">
+										<img src="img/dest/startup.png" alt="STARTUP" class="portfolio__foto" width="325" height="182" />
 									</picture>
 								
             <div class="portfolio__inner">
               <span class="portfolio__name">STARTUP</span>
               <a href="https://oksanazhuravel.github.io/Home-portfolio/" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window"> open the page</span></a>
+                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                  page</span>
+                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
               <a href="https://github.com/OksanaZhuravel/Home-portfolio" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window"> open the code</span></a>
+                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
+                  open the code</span>
+                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
+                  посмотреть код</span></a>
             </div>
           </li>
           <li class="portfolio__item">
@@ -261,15 +418,20 @@
 									<picture>
 										<source srcset="img/dest/food.webp" type="image/webp">
 										<source srcset="img/dest/food.png" type="image/png">
-										<img src="img/dest/food.png" alt="Organic Food AGRO" class="portfolio__foto" width="325" height="182">
+										<img src="img/dest/food.png" alt="Organic Food AGRO" class="portfolio__foto" width="325" height="182" />
 									</picture>
 								
             <div class="portfolio__inner">
               <span class="portfolio__name">Organic Food AGRO</span>
               <a href="https://oksanazhuravel.github.io/Agro-portfolio/" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window"> open the page</span></a>
+                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                  page</span>
+                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
               <a href="https://github.com/OksanaZhuravel/Agro-portfolio" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window"> open the code</span></a>
+                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
+                  open the code</span>
+                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
+                  посмотреть код</span></a>
             </div>
           </li>
           <li class="portfolio__item">
@@ -277,17 +439,22 @@
 									<picture>
 										<source srcset="img/dest/shop.webp" type="image/webp">
 										<source srcset="img/dest/shop.png" type="image/png">
-										<img src="img/dest/shop.png" alt="Shop Gllacy" class="portfolio__foto" width="325" height="182">
+										<img src="img/dest/shop.png" alt="Shop Gllacy" class="portfolio__foto" width="325" height="182" />
 									</picture>
 								
             <div class="portfolio__inner">
               <span class="portfolio__name">Shop Gllacy</span>
               <a href="https://oksanazhuravel.github.io/Shop-Gllacy-portfolio-/" class="portfolio__link"
                 target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window"> open the page</span></a>
+                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                  page</span>
+                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
               <a href="https://github.com/OksanaZhuravel/Shop-Gllacy-portfolio-" class="portfolio__link"
                 target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window"> open the code</span></a>
+                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
+                  open the code</span>
+                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
+                  посмотреть код</span></a>
             </div>
           </li>
         </ul>
@@ -296,7 +463,8 @@
         <div class="swiper-pagination"></div> -->
       </section>
       <section class="certificate" id="certificate">
-        <h2 class="certificate__title">Certificates</h2>
+        <h2 class="certificate__title" lang="en">Certificates</h2>
+        <h2 class="certificate__title" lang="ru">Сертификаты</h2>
         <div class="swiper">
           <ul class="certificate__list swiper-wrapper">
             <li class="certificate__item swiper-slide">
@@ -304,7 +472,7 @@
 									<picture>
 										<source srcset="img/dest/HTML_gold.webp" type="image/webp">
 										<source srcset="img/dest/HTML_gold.jpg" type="image/jpeg">
-										<img src="img/dest/HTML_gold.jpg" alt="HTML" class="certificate__foto" width="316" height="171">
+										<img src="img/dest/HTML_gold.jpg" alt="HTML" class="certificate__foto" width="316" height="171" />
 									</picture>
 								
             </li>
@@ -313,7 +481,7 @@
 									<picture>
 										<source srcset="img/dest/js_1.webp" type="image/webp">
 										<source srcset="img/dest/js_1.jpg" type="image/jpeg">
-										<img src="img/dest/js_1.jpg" alt="JS" class="certificate__foto" width="316" height="171">
+										<img src="img/dest/js_1.jpg" alt="JS" class="certificate__foto" width="316" height="171" />
 									</picture>
 								
             </li>
@@ -322,7 +490,7 @@
 									<picture>
 										<source srcset="img/dest/js_2.webp" type="image/webp">
 										<source srcset="img/dest/js_2.jpg" type="image/jpeg">
-										<img src="img/dest/js_2.jpg" alt="JS" class="certificate__foto" width="316" height="171">
+										<img src="img/dest/js_2.jpg" alt="JS" class="certificate__foto" width="316" height="171" />
 									</picture>
 								
             </li>
@@ -331,7 +499,7 @@
 									<picture>
 										<source srcset="img/dest/react.webp" type="image/webp">
 										<source srcset="img/dest/react.jpg" type="image/jpeg">
-										<img src="img/dest/react.jpg" alt="React" class="certificate__foto" width="316" height="171">
+										<img src="img/dest/react.jpg" alt="React" class="certificate__foto" width="316" height="171" />
 									</picture>
 								
             </li>
@@ -340,7 +508,7 @@
 									<picture>
 										<source srcset="img/dest/js_test.webp" type="image/webp">
 										<source srcset="img/dest/js_test.jpg" type="image/jpeg">
-										<img src="img/dest/js_test.jpg" alt="JS" class="certificate__foto" width="316" height="171">
+										<img src="img/dest/js_test.jpg" alt="JS" class="certificate__foto" width="316" height="171" />
 									</picture>
 								
             </li>
@@ -349,7 +517,7 @@
 									<picture>
 										<source srcset="img/dest/HTML_test1.webp" type="image/webp">
 										<source srcset="img/dest/HTML_test1.jpg" type="image/jpeg">
-										<img src="img/dest/HTML_test1.jpg" alt="HTML" class="certificate__foto" width="316" height="171">
+										<img src="img/dest/HTML_test1.jpg" alt="HTML" class="certificate__foto" width="316" height="171" />
 									</picture>
 								
             </li>
@@ -358,7 +526,7 @@
 									<picture>
 										<source srcset="img/dest/HTML_test2.webp" type="image/webp">
 										<source srcset="img/dest/HTML_test2.jpg" type="image/jpeg">
-										<img src="img/dest/HTML_test2.jpg" alt="HTML" class="certificate__foto" width="316" height="171">
+										<img src="img/dest/HTML_test2.jpg" alt="HTML" class="certificate__foto" width="316" height="171" />
 									</picture>
 								
             </li>
@@ -367,7 +535,7 @@
 									<picture>
 										<source srcset="img/dest/HTML_test3.webp" type="image/webp">
 										<source srcset="img/dest/HTML_test3.jpg" type="image/jpeg">
-										<img src="img/dest/HTML_test3.jpg" alt="HTML" class="certificate__foto" width="316" height="171">
+										<img src="img/dest/HTML_test3.jpg" alt="HTML" class="certificate__foto" width="316" height="171" />
 									</picture>
 								
             </li>
@@ -376,7 +544,7 @@
 									<picture>
 										<source srcset="img/dest/HTML_test32.webp" type="image/webp">
 										<source srcset="img/dest/HTML_test32.jpg" type="image/jpeg">
-										<img src="img/dest/HTML_test32.jpg" alt="HTML" class="certificate__foto" width="316" height="171">
+										<img src="img/dest/HTML_test32.jpg" alt="HTML" class="certificate__foto" width="316" height="171" />
 									</picture>
 								
             </li>
@@ -385,7 +553,7 @@
 									<picture>
 										<source srcset="img/dest/HTML_test4.webp" type="image/webp">
 										<source srcset="img/dest/HTML_test4.jpg" type="image/jpeg">
-										<img src="img/dest/HTML_test4.jpg" alt="HTML" class="certificate__foto" width="316" height="171">
+										<img src="img/dest/HTML_test4.jpg" alt="HTML" class="certificate__foto" width="316" height="171" />
 									</picture>
 								
             </li>
@@ -394,7 +562,7 @@
 									<picture>
 										<source srcset="img/dest/git.webp" type="image/webp">
 										<source srcset="img/dest/git.jpg" type="image/jpeg">
-										<img src="img/dest/git.jpg" alt="GIT" class="certificate__foto" width="316" height="171">
+										<img src="img/dest/git.jpg" alt="GIT" class="certificate__foto" width="316" height="171" />
 									</picture>
 								
             </li>
@@ -403,7 +571,7 @@
 									<picture>
 										<source srcset="img/dest/basick.webp" type="image/webp">
 										<source srcset="img/dest/basick.jpg" type="image/jpeg">
-										<img src="img/dest/basick.jpg" alt="Основы web" class="certificate__foto" width="316" height="171">
+										<img src="img/dest/basick.jpg" alt="Основы" class="certificate__foto" width="316" height="171" />
 									</picture>
 								
             </li>
@@ -412,7 +580,7 @@
 									<picture>
 										<source srcset="img/dest/basick_test.webp" type="image/webp">
 										<source srcset="img/dest/basick_test.jpg" type="image/jpeg">
-										<img src="img/dest/basick_test.jpg" alt="Основы web" class="certificate__foto" width="316" height="171">
+										<img src="img/dest/basick_test.jpg" alt="Основы" class="certificate__foto" width="316" height="171" />
 									</picture>
 								
             </li>
@@ -421,7 +589,7 @@
 									<picture>
 										<source srcset="img/dest/intensive.webp" type="image/webp">
 										<source srcset="img/dest/intensive.jpg" type="image/jpeg">
-										<img src="img/dest/intensive.jpg" alt="Основы web" class="certificate__foto" width="316" height="171">
+										<img src="img/dest/intensive.jpg" alt="Основы" class="certificate__foto" width="316" height="171" />
 									</picture>
 								
             </li>
@@ -430,7 +598,7 @@
 									<picture>
 										<source srcset="img/dest/intensive_web.webp" type="image/webp">
 										<source srcset="img/dest/intensive_web.jpg" type="image/jpeg">
-										<img src="img/dest/intensive_web.jpg" alt="Основы web" class="certificate__foto" width="316" height="171">
+										<img src="img/dest/intensive_web.jpg" alt="Основы" class="certificate__foto" width="316" height="171" />
 									</picture>
 								
             </li>
@@ -439,7 +607,7 @@
 									<picture>
 										<source srcset="img/dest/video.webp" type="image/webp">
 										<source srcset="img/dest/video.jpg" type="image/jpeg">
-										<img src="img/dest/video.jpg" alt="Основы web" class="certificate__foto" width="316" height="171">
+										<img src="img/dest/video.jpg" alt="Основы" class="certificate__foto" width="316" height="171" />
 									</picture>
 								
             </li>
@@ -448,7 +616,7 @@
 									<picture>
 										<source srcset="img/dest/web_start.webp" type="image/webp">
 										<source srcset="img/dest/web_start.jpg" type="image/jpeg">
-										<img src="img/dest/web_start.jpg" alt="Основы web" class="certificate__foto" width="316" height="171">
+										<img src="img/dest/web_start.jpg" alt="Основы" class="certificate__foto" width="316" height="171" />
 									</picture>
 								
             </li>
@@ -457,23 +625,36 @@
 									<picture>
 										<source srcset="img/dest/wordpress.webp" type="image/webp">
 										<source srcset="img/dest/wordpress.jpg" type="image/jpeg">
-										<img src="img/dest/wordpress.jpg" alt="Основы web" class="certificate__foto" width="316" height="171">
+										<img src="img/dest/wordpress.jpg" alt="Основы" class="certificate__foto" width="316" height="171" />
 									</picture>
 								
             </li>
           </ul>
-          <button class="button swiper-button-next" type="button"><span class="visually-hidden">Вперед</span></button>
-          <button class="button swiper-button-prev" type="button"><span class="visually-hidden">Назад</span></button>
+          <button class="button swiper-button-next" type="button">
+            <span class="visually-hidden">Вперед</span>
+          </button>
+          <button class="button swiper-button-prev" type="button">
+            <span class="visually-hidden">Назад</span>
+          </button>
           <div class="swiper-pagination"></div>
         </div>
       </section>
     </main>
     <footer class="footer" id="contacts">
-      <h3 class="footer__title">Contacts</h3>
-      <p class="footer__text">Want to know more or just chat? You are welcome!</p>
+      <h3 class="footer__title" lang="en">Contacts</h3>
+      <p class="footer__text" lang="en">
+        Want to know more or just chat? You are welcome!
+      </p>
+      <h3 class="footer__title" lang="ru">Контакты</h3>
+      <p class="footer__text" lang="ru">
+        Хотите узнать больше или просто поболтать? Пишите!
+      </p>
       <form action="mailto:opuseva@mail.ru">
-        <button class="button button__footer" type="submit">
-          <span class="button__text">Send message</span></button></form>
+        <button class="button__footer" type="submit">
+          <span class="button__text" lang="en">Send message</span>
+          <span class="button__text" lang="ru">Отправить сообщение</span>
+        </button>
+      </form>
       <ul class="social footer__social">
         <li class="social__item">
           <a href="mailto:opuseva@mail.ru" class="social__link"><span class="visually-hidden">email</span>
@@ -496,8 +677,7 @@
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M0 24C0 37.2548 10.7452 48 24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24ZM19.6 35L20.0083 28.8823L20.008 28.882L31.1369 18.839C31.6253 18.4055 31.0303 18.1941 30.3819 18.5873L16.6473 27.2523L10.7147 25.4007C9.4335 25.0084 9.4243 24.128 11.0023 23.4951L34.1203 14.5809C35.1762 14.1015 36.1953 14.8345 35.7922 16.4505L31.8552 35.0031C31.5803 36.3215 30.7837 36.6368 29.68 36.0278L23.6827 31.5969L20.8 34.4C20.7909 34.4088 20.7819 34.4176 20.7729 34.4264C20.4505 34.7403 20.1837 35 19.6 35Z"
-                fill="black" />
-            </svg></a>
+                fill="black" /></svg></a>
         </li>
         <li class="social__item">
           <a href="https://www.instagram.com/opuseva/" class="social__link"><span
@@ -511,8 +691,7 @@
                 fill="#000100" />
               <path
                 d="M39.6937 11.1844C39.6937 12.7782 38.4 14.0625 36.8156 14.0625C35.2219 14.0625 33.9375 12.7688 33.9375 11.1844C33.9375 9.59065 35.2313 8.30627 36.8156 8.30627C38.4 8.30627 39.6937 9.60003 39.6937 11.1844Z"
-                fill="#000100" />
-            </svg></a>
+                fill="#000100" /></svg></a>
         </li>
         <li class="social__item">
           <a href="https://github.com/OksanaZhuravel?tab=repositories" class="social__link"><span
@@ -565,40 +744,15 @@
           </a>
         </li>
       </ul>
-      <p class="footer__desc">Like me on </p>
-      <p class="footer__desc">Email,Telegram ,Instagram, GitHub, WhatsApp</p>
+      <p class="footer__desc" lang="en">Like me on</p>
+      <p class="footer__desc" lang="en">
+        Email,Telegram ,Instagram, GitHub, WhatsApp
+      </p>
+      <p class="footer__desc" lang="ru">
+        Почта,Telegram ,Instagram, GitHub, WhatsApp
+      </p>
     </footer>
     <script src="js/script.min.js"></script>
-  </body>
-
-  <body class="body" lang="ru">
-    <header class="header">
-      <nav class="nav nav--closed nav--nojs">
-        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="nav__wrap">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#promo" class="nav__link nav__link--active"><span
-                  class="nav__text">Home</span></a></li>
-            <li class="nav__item"><a href="#about" class="nav__link"><span class="nav__text">обо мне</span></a></li>
-            <li class="nav__item"><a href="#skills" class="nav__link"><span class="nav__text">Навыки и умения</span></a>
-            </li>
-            <li class="nav__item"><a href="#portfolio" class="nav__link"><span class="nav__text">портфолио</span></a>
-            </li>
-            <li class="nav__item"><a href="#certificate" class="nav__link"><span
-                  class="nav__text">Certificates</span></a> </li>
-            <li class="nav__item"><a href="#contacts" class="nav__link"><span class="nav__text">Контакты</span></a></li>
-          </ul>
-          <ul class="nav__list lang-list">
-            <li class="lang-list__item lang-list__item--active">
-              <a href="#ru" class="lang-list__link" data-lang="ru"><span class="lang-list__text">RU</span></a></li>
-            <li class="lang-list__item ">
-              <a href="#" class="lang-list__link"><span class="lang-list__text">|</span></a></li>
-            <li class="lang-list__item">
-              <a href="#en" class="lang-list__link" data-lang="en"><span class="lang-list__text">ENG</span></a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
   </body>
 
 </html>

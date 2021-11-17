@@ -109,18 +109,50 @@ swiper = new Swiper('.swiper', {
 });
 
 // переключение при смене языка
-// let navlang = document
-//   .querySelectorAll('.lang-list__item')
-//   .forEach(function (navlang) {
-//     console.log(navlang);
-//     navlang.addEventListener('click', function () {
-//       if (navlang.classList.contains('lang-list__item--active')) {
-//         navlang.classList.remove('lang-list__item--active');
-//       } else {
-//         navlang.classList.add('lang-list__item--active');
-//       }
-//     });
-//   });
+let langA = document.querySelector('html');
+let navlang = document.querySelectorAll('.lang-list__link');
+// console.log(navlang);
+navlang.forEach(function (navlang) {
+  // console.log(navlang.attributes[2].value);
+  navlang.addEventListener('click', function () {
+    if (navlang.attributes[2].value === 'en') {
+      // console.log(langA.attributes);
+      langA.attributes.lang.value = 'en';
+      navlang.classList.add('lang-list__item--active');
+    } else {
+      langA.attributes.lang.value = 'ru';
+    }
+  });
+});
+// console.log(navlang.attributes);
+
+// .querySelectorAll('.lang-list__link')
+// .forEach(function (navlang) {
+//   console.log(navlang);
+//   console.log(navlang.attributes);
+//   // navlang.addEventListener('click', function () {
+//   //   if (navlang.classList.contains('lang-list__item--active')) {
+//   //     navlang.classList.remove('lang-list__item--active');
+//   //   } else {
+//   //     navlang.classList.add('lang-list__item--active');
+//   //   }
+//   // });
+// });
+
+// console.log(typeof lang);
+
+// console.log(lang.attributes);
+// console.log(lang.attributes.lang.value);
+// lang.attributes.lang.value = 'ru';
+// console.log(lang.attributes.lang.value);
+
+// console.log(lang.attributes.setNamedItem(value, value));
+
+// lang.setNamedItem();
+
+// console.log(lang);
+
+// console.log(Object.keys(lang));
 
 //Для 2-х языков
 // window.onload = function () {
