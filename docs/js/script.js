@@ -45,18 +45,48 @@ navToggle.addEventListener('click', function () {
   }
 });
 // переключение активных ссылок в меню
+
 let navClick = document
   .querySelectorAll('.nav__link')
   .forEach(function (navClick) {
+    ``;
     // console.log(navClick);
     navClick.addEventListener('click', function () {
       if (navClick.classList.contains('nav__link--active')) {
-        navClick.classList.remove('nav__link--active');
+        // console.log(navClick.classList);
       } else {
         navClick.classList.add('nav__link--active');
+        console.log(navClick.classList);
       }
     });
   });
+
+// let navClick = document.querySelectorAll('.nav__link');
+// // for (let it of navClick) {
+// //   if (it.classList.contains('nav__link--active')) {
+// //     it.classList.remove('nav__link--active');
+// //     // it.classList.toggle('nav__link');
+// //   }
+// //   // else {
+// //   //   it.classList.remove('nav__link--active');
+// //   // }
+// // }
+// navClick.forEach(function (navClick2) {
+//   // console.log(navClick);
+//   navClick2.addEventListener('click', function () {
+//     if (navClick2.classList.contains('nav__link--active')) {
+//       console.log(navClick2.classList);
+//     } else {
+//       navClick2.classList.add('nav__link--active');
+//     }
+//   });
+// });
+// for (let it of navClick) {
+//   if (it.classList.contains('nav__link--active')) {
+//     it.classList.remove('nav__link--active');
+//     // it.classList.toggle('nav__link');
+//   }
+// }
 
 // Сертификаты слайдер
 swiper = new Swiper('.swiper', {
@@ -108,23 +138,42 @@ swiper = new Swiper('.swiper', {
   // },
 });
 
-// переключение при смене языка
-let langA = document.querySelector('html');
+// // переключение при смене языка
+let langA = document.documentElement;
 let navlang = document.querySelectorAll('.lang-list__link');
-// console.log(navlang);
+
 navlang.forEach(function (navlang) {
   // console.log(navlang.attributes[2].value);
   navlang.addEventListener('click', function () {
     if (navlang.attributes[2].value === 'en') {
       // console.log(langA.attributes);
       langA.attributes.lang.value = 'en';
-      navlang.classList.add('lang-list__item--active');
+      console.log(navlang.classList);
+      if (navlang.classList.contains('lang-list__link--active')) {
+        navlang.classList.remove('lang-list__link--active');
+      } else {
+        navlang.classList.add('lang-list__link--active');
+      }
+      console.log(navlang.classList);
     } else {
       langA.attributes.lang.value = 'ru';
+      console.log(navlang.classList);
+      if (navlang.classList.contains('lang-list__link--active')) {
+        navlang.classList.add('lang-list__link--active');
+      } else {
+        navlang.classList.remove('lang-list__link--active');
+      }
+    }
+    if (navlang.classList.contains('lang-list__link--active')) {
+      navlang.classList.remove('lang-list__link--active');
+      navlang.classList.add('lang-list__link--active');
+    } else {
+      navlang.classList.add('lang-list__link--active');
+      navlang.classList.remove('lang-list__link--active');
     }
   });
 });
-// console.log(navlang.attributes);
+console.log(navlang.attributes);
 
 // .querySelectorAll('.lang-list__link')
 // .forEach(function (navlang) {
