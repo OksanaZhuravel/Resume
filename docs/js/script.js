@@ -173,7 +173,7 @@ navlang.forEach(function (navlang) {
     }
   });
 });
-console.log(navlang.attributes);
+// console.log(navlang.attributes);
 
 // .querySelectorAll('.lang-list__link')
 // .forEach(function (navlang) {
@@ -239,3 +239,27 @@ console.log(navlang.attributes);
 //     $("html").attr("lang",$(this).data("lang"));
 //     $(this).parent().addClass("active");
 //   });
+
+// Модальное окно
+let modal = document.querySelector('.modal');
+let close = modal.querySelector('.modal__close');
+let show = modal.querySelectorAll('.modal__list').forEach(function (show) {
+  if (show.attributes.lang.nodeValue === 'en') {
+    show.classList.add('modal__list--show');
+  } else {
+    show.classList.add('modal__list--show');
+  }
+});
+let button = document
+  .querySelectorAll('.skill__link')
+  .forEach(function (button) {
+    button.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      modal.classList.add('modal--show');
+    });
+  });
+close.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  modal.classList.remove('modal--show');
+  // show.classList.remove('modal__list--show');
+});
