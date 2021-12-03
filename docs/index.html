@@ -18,7 +18,7 @@
         <div class="nav__wrap">
           <ul class="nav__list" lang="en">
             <li class="nav__item">
-              <a href="#promo" class="nav__link nav__link--active"><span class="nav__text">Home</span></a>
+              <a href="#promo" class="nav__link nav__active"><span class="nav__text">Home</span></a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link"><span class="nav__text">About me</span></a>
@@ -38,7 +38,7 @@
           </ul>
           <ul class="nav__list" lang="ru">
             <li class="nav__item">
-              <a href="#promo" class="nav__link nav__link--active"><span class="nav__text">Главная</span></a>
+              <a href="#promo" class="nav__active nav__link"><span class="nav__text">Главная</span></a>
             </li>
             <li class="nav__item">
               <a href="#about-ru" class="nav__link"><span class="nav__text">Обо мне</span></a>
@@ -58,7 +58,7 @@
           </ul>
           <ul class="nav__list lang-list">
             <li class="lang-list__item ">
-              <a href="#ru" class="lang-list__link lang-list__link--active" data-lang="ru"><span
+              <a href="#ru" class="lang-list__link lang-list__active" data-lang="ru"><span
                   class="lang-list__text">RU</span></a>
             </li>
             <li class="lang-list__item">
@@ -166,31 +166,33 @@
       <section class="portfolio" id="portfolio">
         <h2 class="portfolio__title" lang="en">Portfolio</h2>
         <h2 class="portfolio__title" lang="ru">Мои работы</h2>
-        <ul class="portfolio__list">
-          <li class="portfolio__item">
+        <div class="project swiper">
+          <ul class="portfolio__list swiper-wrapper">
+            <li class="portfolio__item swiper-slide">
 
 									<picture>
 										<source srcset="img/dest/screenshoter.webp" type="image/webp">
 										<source srcset="img/dest/screenshoter.png" type="image/png">
-										<img src="img/dest/screenshoter.png" alt="Screenshoter" class="portfolio__foto" width="325" height="182" />
+										<img src="img/dest/screenshoter.png" alt="Screens" class="portfolio__foto" width="325" height="182" />
 									</picture>
 								
-            <div class="portfolio__inner">
-              <span class="portfolio__name">Landing "Screenshoter+"</span>
-              <span class="portfolio__dest" lang="ru">Mobile first. Mобильное меню, аккордеон с вопросами. Анимация при
-                скролле библиотекa Wow.js и Animate.css.</span>
-              <a href="https://oksanazhuravel.github.io/Screenshoter/" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
-                  page</span>
-                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
-              <a href="https://github.com/OksanaZhuravel/Screenshoter" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
-                  code</span>
-                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
-                  посмотреть код</span></a>
-            </div>
-          </li>
-          <li class="portfolio__item">
+              <div class="portfolio__inner">
+                <span class="portfolio__name">Landing "Screenshoter+"</span>
+                <span class="portfolio__dest" lang="ru">Mobile first. Mобильное меню, аккордеон с вопросами. Анимация
+                  при
+                  скролле библиотекa Wow.js и Animate.css.</span>
+                <a href="https://oksanazhuravel.github.io/Screenshoter/" class="portfolio__link" target="_blank">
+                  <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                    page</span>
+                  <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
+                <a href="https://github.com/OksanaZhuravel/Screenshoter" class="portfolio__link" target="_blank">
+                  <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                    code</span>
+                  <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
+                    посмотреть код</span></a>
+              </div>
+            </li>
+            <li class="portfolio__item swiper-slide">
 
 									<picture>
 										<source srcset="img/dest/insta.webp" type="image/webp">
@@ -198,21 +200,21 @@
 										<img src="img/dest/insta.png" alt="Voyage" class="portfolio__foto" width="325" height="182" />
 									</picture>
 								
-            <div class="portfolio__inner">
-              <span class="portfolio__name">Landing "Voyage"</span>
-              <span class="portfolio__dest" lang="ru">Очень простой макет для тренировки CSS Grid Layout.</span>
-              <a href="https://oksanazhuravel.github.io/Voyage/" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
-                  page</span>
-                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
-              <a href="https://github.com/OksanaZhuravel/Voyage" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
-                  open the code</span>
-                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
-                  посмотреть код</span></a>
-            </div>
-          </li>
-          <li class="portfolio__item">
+              <div class="portfolio__inner">
+                <span class="portfolio__name">Landing "Voyage"</span>
+                <span class="portfolio__dest" lang="ru">Очень простой макет для тренировки CSS Grid Layout.</span>
+                <a href="https://oksanazhuravel.github.io/Voyage/" class="portfolio__link" target="_blank">
+                  <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                    page</span>
+                  <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
+                <a href="https://github.com/OksanaZhuravel/Voyage" class="portfolio__link" target="_blank">
+                  <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
+                    open the code</span>
+                  <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
+                    посмотреть код</span></a>
+              </div>
+            </li>
+            <li class="portfolio__item swiper-slide">
 
 									<picture>
 										<source srcset="img/dest/cappadocia.webp" type="image/webp">
@@ -220,22 +222,23 @@
 										<img src="img/dest/cappadocia.png" alt="Cappadocia" class="portfolio__foto" width="325" height="182" />
 									</picture>
 								
-            <div class="portfolio__inner">
-              <span class="portfolio__name">Landing "Cappadocia"</span>
-              <span class="portfolio__dest" lang="ru">Макет туристического тура.Форма заявки на тур, карусель и галерея
-                изображений.Версия desktop 1920px.</span>
-              <a href="https://oksanazhuravel.github.io/Cappadocia/" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
-                  page</span>
-                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
-              <a href="https://github.com/OksanaZhuravel/Cappadocia" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
-                  open the code</span>
-                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
-                  посмотреть код</span></a>
-            </div>
-          </li>
-          <li class="portfolio__item">
+              <div class="portfolio__inner">
+                <span class="portfolio__name">Landing "Cappadocia"</span>
+                <span class="portfolio__dest" lang="ru">Макет туристического тура.Форма заявки на тур, карусель и
+                  галерея
+                  изображений.Версия desktop 1920px.</span>
+                <a href="https://oksanazhuravel.github.io/Cappadocia/" class="portfolio__link" target="_blank">
+                  <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                    page</span>
+                  <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
+                <a href="https://github.com/OksanaZhuravel/Cappadocia" class="portfolio__link" target="_blank">
+                  <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
+                    open the code</span>
+                  <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
+                    посмотреть код</span></a>
+              </div>
+            </li>
+            <li class="portfolio__item swiper-slide">
 
 									<picture>
 										<source srcset="img/dest/travel.webp" type="image/webp">
@@ -243,22 +246,22 @@
 										<img src="img/dest/travel.png" alt="Travel" class="portfolio__foto" width="325" height="182" />
 									</picture>
 								
-            <div class="portfolio__inner">
-              <span class="portfolio__name">Landing "Travel"</span>
-              <span class="portfolio__dest" lang="ru">Макет тура деловой поездки. Mobile first для экранов 480px.Форма
-                заявки бронирования</span>
-              <a href="https://oksanazhuravel.github.io/Travel/" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
-                  page</span>
-                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
-              <a href="https://github.com/OksanaZhuravel/Travel" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
-                  open the code</span>
-                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
-                  посмотреть код</span></a>
-            </div>
-          </li>
-          <li class="portfolio__item">
+              <div class="portfolio__inner">
+                <span class="portfolio__name">Landing "Travel"</span>
+                <span class="portfolio__dest" lang="ru">Макет тура деловой поездки. Mobile first для экранов 480px.Форма
+                  заявки бронирования</span>
+                <a href="https://oksanazhuravel.github.io/Travel/" class="portfolio__link" target="_blank">
+                  <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                    page</span>
+                  <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
+                <a href="https://github.com/OksanaZhuravel/Travel" class="portfolio__link" target="_blank">
+                  <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
+                    open the code</span>
+                  <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
+                    посмотреть код</span></a>
+              </div>
+            </li>
+            <li class="portfolio__item swiper-slide">
 
 									<picture>
 										<source srcset="img/dest/flover.webp" type="image/webp">
@@ -266,22 +269,22 @@
 										<img src="img/dest/flover.png" alt="букеты" class="portfolio__foto" width="325" height="182" />
 									</picture>
 								
-            <div class="portfolio__inner">
-              <span class="portfolio__name">Landing "Авторские букеты"</span>
-              <span class="portfolio__dest" lang="ru">Создавался для прохождения марафона "Заверстаю" от HTML
-                Academy.</span>
-              <a href="https://oksanazhuravel.github.io/HTMLacademy/" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
-                  page</span>
-                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
-              <a href="https://github.com/OksanaZhuravel/HTMLacademy" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
-                  open the code</span>
-                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
-                  посмотреть код</span></a>
-            </div>
-          </li>
-          <li class="portfolio__item">
+              <div class="portfolio__inner">
+                <span class="portfolio__name">Landing "Авторские букеты"</span>
+                <span class="portfolio__dest" lang="ru">Создавался для прохождения марафона "Заверстаю" от HTML
+                  Academy.</span>
+                <a href="https://oksanazhuravel.github.io/HTMLacademy/" class="portfolio__link" target="_blank">
+                  <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                    page</span>
+                  <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
+                <a href="https://github.com/OksanaZhuravel/HTMLacademy" class="portfolio__link" target="_blank">
+                  <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
+                    open the code</span>
+                  <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
+                    посмотреть код</span></a>
+              </div>
+            </li>
+            <li class="portfolio__item swiper-slide">
 
 									<picture>
 										<source srcset="img/dest/studio.webp" type="image/webp">
@@ -289,21 +292,21 @@
 										<img src="img/dest/studio.png" alt="Studio" class="portfolio__foto" width="325" height="182" />
 									</picture>
 								
-            <div class="portfolio__inner">
-              <span class="portfolio__name">Landing "Веб-студия"</span>
-              <span class="portfolio__dest" lang="ru">Mobile first для экранов 480px. Форма обратной связи.</span>
-              <a href="https://oksanazhuravel.github.io/Your-studio/" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
-                  page</span>
-                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
-              <a href="https://github.com/OksanaZhuravel/Your-studio" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
-                  open the code</span>
-                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
-                  посмотреть код</span></a>
-            </div>
-          </li>
-          <li class="portfolio__item">
+              <div class="portfolio__inner">
+                <span class="portfolio__name">Landing "Веб-студия"</span>
+                <span class="portfolio__dest" lang="ru">Mobile first для экранов 480px. Форма обратной связи.</span>
+                <a href="https://oksanazhuravel.github.io/Your-studio/" class="portfolio__link" target="_blank">
+                  <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                    page</span>
+                  <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
+                <a href="https://github.com/OksanaZhuravel/Your-studio" class="portfolio__link" target="_blank">
+                  <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
+                    open the code</span>
+                  <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
+                    посмотреть код</span></a>
+              </div>
+            </li>
+            <li class="portfolio__item swiper-slide">
 
 									<picture>
 										<source srcset="img/dest/neutron.webp" type="image/webp">
@@ -311,22 +314,25 @@
 										<img src="img/dest/neutron.png" alt="NeutronMail" class="portfolio__foto" width="325" height="182" />
 									</picture>
 								
-            <div class="portfolio__inner">
-              <span class="portfolio__name">Landing "NeutronMail"</span>
-              <span class="portfolio__dest" lang="ru">Mobile first для экранов 320px. Адаптив для экранов более 650px и
-                1088px, dekstop 1800px.</span>
-              <a href="https://oksanazhuravel.github.io/NeutronMail-portfolio/" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
-                  page</span>
-                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
-              <a href="https://github.com/OksanaZhuravel/NeutronMail-portfolio" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
-                  open the code</span>
-                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
-                  посмотреть код</span></a>
-            </div>
-          </li>
-          <li class="portfolio__item">
+              <div class="portfolio__inner">
+                <span class="portfolio__name">Landing "NeutronMail"</span>
+                <span class="portfolio__dest" lang="ru">Mobile first для экранов 320px. Адаптив для экранов более 650px
+                  и
+                  1088px, dekstop 1800px.</span>
+                <a href="https://oksanazhuravel.github.io/NeutronMail-portfolio/" class="portfolio__link"
+                  target="_blank">
+                  <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                    page</span>
+                  <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
+                <a href="https://github.com/OksanaZhuravel/NeutronMail-portfolio" class="portfolio__link"
+                  target="_blank">
+                  <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
+                    open the code</span>
+                  <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
+                    посмотреть код</span></a>
+              </div>
+            </li>
+            <li class="portfolio__item swiper-slide">
 
 									<picture>
 										<source srcset="img/dest/startup.webp" type="image/webp">
@@ -334,21 +340,21 @@
 										<img src="img/dest/startup.png" alt="STARTUP" class="portfolio__foto" width="325" height="182" />
 									</picture>
 								
-            <div class="portfolio__inner">
-              <span class="portfolio__name">Landing "STARTUP"</span>
-              <span class="portfolio__dest" lang="ru">Mobile first для экранов 480px. Форма обратной связи.</span>
-              <a href="https://oksanazhuravel.github.io/Home-portfolio/" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
-                  page</span>
-                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
-              <a href="https://github.com/OksanaZhuravel/Home-portfolio" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
-                  open the code</span>
-                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
-                  посмотреть код</span></a>
-            </div>
-          </li>
-          <li class="portfolio__item">
+              <div class="portfolio__inner">
+                <span class="portfolio__name">Landing "STARTUP"</span>
+                <span class="portfolio__dest" lang="ru">Mobile first для экранов 480px. Форма обратной связи.</span>
+                <a href="https://oksanazhuravel.github.io/Home-portfolio/" class="portfolio__link" target="_blank">
+                  <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                    page</span>
+                  <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
+                <a href="https://github.com/OksanaZhuravel/Home-portfolio" class="portfolio__link" target="_blank">
+                  <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
+                    open the code</span>
+                  <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
+                    посмотреть код</span></a>
+              </div>
+            </li>
+            <li class="portfolio__item swiper-slide">
 
 									<picture>
 										<source srcset="img/dest/food.webp" type="image/webp">
@@ -356,21 +362,21 @@
 										<img src="img/dest/food.png" alt="Organic Food AGRO" class="portfolio__foto" width="325" height="182" />
 									</picture>
 								
-            <div class="portfolio__inner">
-              <span class="portfolio__name">Landing "Organic Food AGRO"</span>
-              <span class="portfolio__dest" lang="ru">Mobile first для экранов 480px. Интерактивная карта.</span>
-              <a href="https://oksanazhuravel.github.io/Agro-portfolio/" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
-                  page</span>
-                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
-              <a href="https://github.com/OksanaZhuravel/Agro-portfolio" class="portfolio__link" target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
-                  open the code</span>
-                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
-                  посмотреть код</span></a>
-            </div>
-          </li>
-          <li class="portfolio__item">
+              <div class="portfolio__inner">
+                <span class="portfolio__name">Landing "Organic Food AGRO"</span>
+                <span class="portfolio__dest" lang="ru">Mobile first для экранов 480px. Интерактивная карта.</span>
+                <a href="https://oksanazhuravel.github.io/Agro-portfolio/" class="portfolio__link" target="_blank">
+                  <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                    page</span>
+                  <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
+                <a href="https://github.com/OksanaZhuravel/Agro-portfolio" class="portfolio__link" target="_blank">
+                  <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
+                    open the code</span>
+                  <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
+                    посмотреть код</span></a>
+              </div>
+            </li>
+            <li class="portfolio__item swiper-slide">
 
 									<picture>
 										<source srcset="img/dest/shop.webp" type="image/webp">
@@ -378,28 +384,34 @@
 										<img src="img/dest/shop.png" alt="Shop Gllacy" class="portfolio__foto" width="325" height="182" />
 									</picture>
 								
-            <div class="portfolio__inner">
-              <span class="portfolio__name">Online-shop "Gllacy"</span>
-              <span class="portfolio__dest" lang="ru">Учебный проект от HTML Academy.
-                Главная страница и страница каталога. Форма обратной связи, модальное окно, интерактивная карта.</span>
+              <div class="portfolio__inner">
+                <span class="portfolio__name">Online-shop "Gllacy"</span>
+                <span class="portfolio__dest" lang="ru">Учебный проект от HTML Academy.
+                  Главная страница и страница каталога. Форма обратной связи, модальное окно, интерактивная
+                  карта.</span>
 
-              <a href="https://oksanazhuravel.github.io/Shop-Gllacy-portfolio-/" class="portfolio__link"
-                target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
-                  page</span>
-                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
-              <a href="https://github.com/OksanaZhuravel/Shop-Gllacy-portfolio-" class="portfolio__link"
-                target="_blank">
-                <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
-                  open the code</span>
-                <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
-                  посмотреть код</span></a>
-            </div>
-          </li>
-        </ul>
-        <!-- <button class="button swiper-button-next" type="button"><span class="visually-hidden">Вперед</span></button>
-        <button class="button swiper-button-prev" type="button"><span class="visually-hidden">Назад</span></button>
-        <div class="swiper-pagination"></div> -->
+                <a href="https://oksanazhuravel.github.io/Shop-Gllacy-portfolio-/" class="portfolio__link"
+                  target="_blank">
+                  <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">open the
+                    page</span>
+                  <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">открыть</span></a>
+                <a href="https://github.com/OksanaZhuravel/Shop-Gllacy-portfolio-" class="portfolio__link"
+                  target="_blank">
+                  <span class="portfolio__text" data-tooltip="Link will open in a new window" lang="en">
+                    open the code</span>
+                  <span class="portfolio__text" data-tooltip="открыть в новом окне" lang="ru">
+                    посмотреть код</span></a>
+              </div>
+            </li>
+          </ul>
+          <button class="button swiper-button-next" type="button">
+            <span class="visually-hidden">Вперед</span>
+          </button>
+          <button class="button swiper-button-prev" type="button">
+            <span class="visually-hidden">Назад</span>
+          </button>
+          <div class="swiper-pagination"></div>
+        </div>
       </section>
       <section class="certificate" id="certificate">
         <h2 class="certificate__title" lang="en">Certificates</h2>

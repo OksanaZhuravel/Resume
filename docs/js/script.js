@@ -45,48 +45,18 @@ navToggle.addEventListener('click', function () {
   }
 });
 // переключение активных ссылок в меню
-
 let navClick = document
   .querySelectorAll('.nav__link')
   .forEach(function (navClick) {
-    ``;
-    // console.log(navClick);
     navClick.addEventListener('click', function () {
       if (navClick.classList.contains('nav__link--active')) {
-        // console.log(navClick.classList);
+        navClick.classList.remove('nav__link--active');
       } else {
         navClick.classList.add('nav__link--active');
         console.log(navClick.classList);
       }
     });
   });
-
-// let navClick = document.querySelectorAll('.nav__link');
-// // for (let it of navClick) {
-// //   if (it.classList.contains('nav__link--active')) {
-// //     it.classList.remove('nav__link--active');
-// //     // it.classList.toggle('nav__link');
-// //   }
-// //   // else {
-// //   //   it.classList.remove('nav__link--active');
-// //   // }
-// // }
-// navClick.forEach(function (navClick2) {
-//   // console.log(navClick);
-//   navClick2.addEventListener('click', function () {
-//     if (navClick2.classList.contains('nav__link--active')) {
-//       console.log(navClick2.classList);
-//     } else {
-//       navClick2.classList.add('nav__link--active');
-//     }
-//   });
-// });
-// for (let it of navClick) {
-//   if (it.classList.contains('nav__link--active')) {
-//     it.classList.remove('nav__link--active');
-//     // it.classList.toggle('nav__link');
-//   }
-// }
 
 // Сертификаты слайдер
 swiper = new Swiper('.swiper', {
@@ -137,108 +107,7 @@ swiper = new Swiper('.swiper', {
   //   // eventsTarget: '.swiper-slide',
   // },
 });
-
-// // переключение при смене языка
-let langA = document.documentElement;
-let navlang = document.querySelectorAll('.lang-list__link');
-
-navlang.forEach(function (navlang) {
-  // console.log(navlang.attributes[2].value);
-  navlang.addEventListener('click', function () {
-    if (navlang.attributes[2].value === 'en') {
-      // console.log(langA.attributes);
-      langA.attributes.lang.value = 'en';
-      console.log(navlang.classList);
-      if (navlang.classList.contains('lang-list__link--active')) {
-        navlang.classList.remove('lang-list__link--active');
-      } else {
-        navlang.classList.add('lang-list__link--active');
-      }
-      console.log(navlang.classList);
-    } else {
-      langA.attributes.lang.value = 'ru';
-      console.log(navlang.classList);
-      if (navlang.classList.contains('lang-list__link--active')) {
-        navlang.classList.add('lang-list__link--active');
-      } else {
-        navlang.classList.remove('lang-list__link--active');
-      }
-    }
-    if (navlang.classList.contains('lang-list__link--active')) {
-      navlang.classList.remove('lang-list__link--active');
-      navlang.classList.add('lang-list__link--active');
-    } else {
-      navlang.classList.add('lang-list__link--active');
-      navlang.classList.remove('lang-list__link--active');
-    }
-  });
-});
-// console.log(navlang.attributes);
-
-// .querySelectorAll('.lang-list__link')
-// .forEach(function (navlang) {
-//   console.log(navlang);
-//   console.log(navlang.attributes);
-//   // navlang.addEventListener('click', function () {
-//   //   if (navlang.classList.contains('lang-list__item--active')) {
-//   //     navlang.classList.remove('lang-list__item--active');
-//   //   } else {
-//   //     navlang.classList.add('lang-list__item--active');
-//   //   }
-//   // });
-// });
-
-// console.log(typeof lang);
-
-// console.log(lang.attributes);
-// console.log(lang.attributes.lang.value);
-// lang.attributes.lang.value = 'ru';
-// console.log(lang.attributes.lang.value);
-
-// console.log(lang.attributes.setNamedItem(value, value));
-
-// lang.setNamedItem();
-
-// console.log(lang);
-
-// console.log(Object.keys(lang));
-
-//Для 2-х языков
-// window.onload = function () {
-//   lang = localStorage.getItem('lang');
-//   if (lang === 'ru') {
-//   } else {
-//     lang = 'en';
-//   }
-// };
-// На JS...
-// Ну, допустим, разбить содержимое на контейнеры с атрибутом LANG
-// <html lang="ru">
-// ...
-//   <p lang="ru">Текст на русском</p>
-//   <p lang="en">English text</p>
-// ...
-
-// В стилях будет
-// html[lang="ru"] [lang="en"] {
-//     display: none;
-// }
-// html[lang="en"] [lang="ru"] {
-//     display: none;
-// }
-
-// Переключатель
-// <ul class="langswitcher">
-//   <li class="active"><a href="#ru" data-lang="ru">Ru</a></li>
-//   <li><a href="#en" data-lang="en">En</a></li>
-// </ul>
-// Скрипт будет перекидывать значение атрибута lang у тэга HTML
-// $(".langswitcher a").on("click",function(e){
-//     e.preventDefault();
-//     $(".langswitcher li").removeClass("active");
-//     $("html").attr("lang",$(this).data("lang"));
-//     $(this).parent().addClass("active");
-//   });
+//  Проекты слайдер
 
 // Модальное окно
 let modal = document.querySelector('.modal');
@@ -261,5 +130,38 @@ let button = document
 close.addEventListener('click', function (evt) {
   evt.preventDefault();
   modal.classList.remove('modal--show');
-  // show.classList.remove('modal__list--show');
 });
+window.addEventListener('keydown', function (e) {
+  if (e.code === 'Escape' || 'NumpadEnter') {
+    e.preventDefault();
+    if (modal.classList.contains('modal--show')) {
+      modal.classList.remove('modal--show');
+    }
+  }
+});
+
+// // переключение при смене языка
+let langDocum = document.documentElement;
+let navlang = document
+  .querySelectorAll('.lang-list__link')
+  .forEach(function (navlang) {
+    navlang.addEventListener('click', function (lahg) {
+      lahg.preventDefault();
+      if (navlang.attributes[2].value === 'en') {
+        langDocum.attributes.lang.value = 'en';
+        if (navlang.classList.contains('lang-list__link--active')) {
+          navlang.classList.remove('lang-list__link--active');
+        } else {
+          navlang.classList.add('lang-list__link--active');
+        }
+      } else {
+        langDocum.attributes.lang.value = 'ru';
+        if (navlang.classList.contains('lang-list__link--active')) {
+          navlang.classList.remove('lang-list__active');
+          navlang.classList.remove('lang-list__link--active');
+        } else {
+          navlang.classList.add('lang-list__link--active');
+        }
+      }
+    });
+  });
