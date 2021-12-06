@@ -59,7 +59,7 @@ let navClick = document
   });
 
 // Сертификаты слайдер
-swiper = new Swiper('.swiper', {
+new Swiper('.swiper', {
   slidesPerView: 1,
   slidesPerGroup: 1,
   spaceBetween: 3,
@@ -102,12 +102,54 @@ swiper = new Swiper('.swiper', {
     onlyInViewport: true,
     pageUpDown: true,
   },
-  // mousewheel: {
-  //   sensitivity: 1,
-  //   // eventsTarget: '.swiper-slide',
-  // },
 });
+
 //  Проекты слайдер
+
+new Swiper('.project', {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 5,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 10,
+    },
+    1068: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 20,
+    },
+  },
+  centerSlides: true,
+  loop: true,
+  loopFillGroupWithBlank: false,
+  watchOverflow: true,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+    renderFraction: function (currentClass, totalClass) {
+      return (
+        '<span class="' +
+        currentClass +
+        '"></span>' +
+        ' / <span class="' +
+        totalClass +
+        '"></span>'
+      );
+    },
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+});
 
 // Модальное окно
 let modal = document.querySelector('.modal');

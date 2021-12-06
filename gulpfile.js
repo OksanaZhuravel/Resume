@@ -103,7 +103,14 @@ function html() {
 }
 function styles() {
   return (
-    src(['node_modules/swiper/swiper-bundle.css', path.src.css])
+    src([
+      // 'node_modules/swiper/swiper-bundle.css',
+      // 'node_modules/swiper/modules/navigation/navigation.less',
+      // 'node_modules/swiper/modules/pagination/pagination.less',
+      // 'node_modules/swiper/modules/keyboard/keyboard.less',
+      // 'node_modules/swiper/swiper.less',
+      path.src.css,
+    ])
       // src(path.src.css)
       .pipe(less())
       .pipe(cssbeautify())
